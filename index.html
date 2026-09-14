@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>NEXORA REALTY</title>
+</head>
+<body>
+    <!-- navbar start here -->
+     <div class="bootstrap-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light p-5">
+            <div>
+                <img src="assets/logo.png" alt="" width="200px">
+            </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link text-white" href="https://www.prowinproperties.com/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="https://www.prowinproperties.com/about-us">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Projects
+                </a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="https://www.prowinproperties.com/off-plan">Skyline Residences</a>
+                <a class="dropdown-item" href="https://www.prowinproperties.com/off-plan">Marina Heights</a>
+                <a class="dropdown-item" href="https://www.prowinproperties.com/off-plan">Garden Villas</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="https://www.prowinproperties.com/">Contact Us</a>
+            </li>
+            </ul>
+        </div>
+        </nav>        
+     </div>
+     <!-- MAIN SECTION START HERE -->
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-6">
+                <div class="content mt-2 p-5">
+                    <h1 class="font-weight-bold">Find Your Dream Home in Dubai UAE</h1>
+                    <div class="para">
+                        <p class="text-lg">Explore premium residences, receive the latest prices and availability, and get personalized guidance from our property specialists. Register your interest today and take the first step toward owning your ideal Dubai property.</p>
+                        <a href="tel:+971547241907" class="font-weight-bold text-warning">Get Property Details & Book a Viewing</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                <div class="lead-form p-4">
+                    <form id="leadform" method="GET">
+                        <h4 class="text-center text-white mb-3"><i>Register Your Interest</i></h4>
+                        <div id="error" class="font-weight-bold text-danger"></div>
+                        <input type="text" id="name" class="form-control" placeholder="Full Name">
+                        <input type="email" id="email" class="form-control" placeholder="Email Address"  >                        
+                        <input type="tel" id="mobile" class="form-control" placeholder="Mobile Number"  >
+                        <select id="project" class="form-control mb-2">
+                            <option value="">Select Project</option>
+                            <option value="Skyline Residences">Skyline Residences</option>
+                            <option value="Marina Heights">Marina Heights</option>
+                            <option value="Garden Villas">Garden Villas</option>
+                        </select>     
+                        <select id="budget" class="form-control mb-2">
+                            <option value="">Select Budget</option>
+                            <option value="Below AED 1M">Below AED 1M</option>
+                            <option value="AED 1M - 2M">AED 1M - 2M</option>
+                            <option value="AED 2M - 3M">AED 2M - 3M</option>
+                            <option value="AED 3M+">AED 3M+</option>
+                        </select>  
+                        <button type="submit" id="submitBtn" class="btn btn-warning btn-block">
+                            Submit Enquiry
+                        </button>                                                                 
+                    </form>
+                </div>
+              </div>              
+          </div>
+      </div>
+
+<div id="thankYouPopup" class="thank-you-popup">
+    <div class="thank-you-box">
+        <div class="success-icon">✓</div>
+        <h2>Thank You!</h2>
+        <p>
+            Your enquiry has been submitted successfully.
+            Our property consultant will contact you shortly.
+        </p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+</div>
+
+<footer class="footer"> <div class="container text-center"> <p class="mb-0"> © 2026 <strong>NEXORA REALTY</strong>. All Rights Reserved. </p> </div> </footer>    
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
